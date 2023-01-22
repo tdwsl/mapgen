@@ -1,0 +1,12 @@
+-- mapgen.gpr
+
+project Mapgen is
+   for Languages use ("ada", "c");
+   for Source_Dirs use (".");
+   for Object_Dir use ".";
+   for Main use ("mapgen.adb");
+
+   package Linker is
+      for Switches ("Ada") use ("-lncurses");
+   end Linker;
+end Mapgen;
