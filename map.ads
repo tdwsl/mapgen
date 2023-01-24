@@ -18,5 +18,7 @@ package Map is
 
    package Generate is
       procedure Gen_Automata;
+      procedure Gen_Walk;
+      procedure Gen_Grid;
    end Generate;
 end Map;
